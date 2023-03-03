@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập JS</title>
+    <!-- link css custom -->\
+    <link rel="stylesheet" href="/style/style.css">
+    <!-- link css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-b1 mx-3">
+        <h3>
+            Bài 1: Tính tiền lương nhân viên.
+        </h3>
+        <div class="form-group">
+            <h4 class="text-danger">
+                Nhập số ngày làm của nhân viên tại đây:
+            </h4>
+            <div class="row">
+                <input class="form-control w-25 bg-success-subtle text-black fs-3 my-4 col-8 mx-4 d-inline-block"
+                    placeholder="Nhập số ngày làm ..." id="soNgayLam">
+                <button class="btn btn-success my-4 fs-5 col-1 mx-3 fw-bold" id="btn-tinhTien">Tính</button>
+            </div>
+            <div class="alert alert-danger w-50 fw-normal fs-3 mx-3" id="ket-qua-bai-1"></div>
+        </div>
+    </div>
+    <br><br><br>
+    <hr><br><br><br>
+    <div class="container-b2 mx-3">
+        <h3 class="text-success fs-2 mb-4">
+            Bài 2: Người dùng nhập vào 5 giá trị số và tính ra giá trị trung bình.
+        </h3>
+        <div class="form-group text-center mx-auto">
+            <input class="form-control w-25 bg-success-subtle text-black fs-3 my-1 d-inline-block"
+                placeholder="Chọn số tại đây ..." id="so1" type="number">
+            <input class="form-control w-25 bg-danger-subtle text-black fs-3 my-1 d-inline-block"
+                placeholder="Chọn số tại đây ..." id="so2" type="number">
+            <input class="form-control w-25 bg-success-subtle text-black fs-3 my-1 d-inline-block"
+                placeholder="Chọn số tại đây ..." id="so3" type="number">
+            <input class="form-control w-25 bg-danger-subtle text-black fs-3 my-1 d-inline-block"
+                placeholder="Chọn số tại đây ..." id="so4" type="number">
+            <input class="form-control w-25 bg-success-subtle text-black fs-3 my-1 d-inline-block"
+                placeholder="Chọn số tại đây ..." id="so5" 1 type="number">
+        </div>
+        <div class="text-center mx-auto">
+            <button class="btn btn-danger fs-4 my-2  d-inline-block" id="btn-tongTB">Tính</button>
+        </div>
+        <div class="alert alert-danger my-2 w-50 mx-auto text-center fw-bold fs-4" id="ket-qua-bai-2"></div>
+    </div>
+    <br><br><br>
+    <hr><br><br><br>
+    <div class="container-b3 mx-3">
+        <h3 class="text-success fs-2 mb-4">
+            Bài 3: Viết chương trình quy đổi tiền tệ USD sang VND.
+        </h3>
+        <div class="row">
+            <h4 class="col-5">Nhập số tiền cần quy đổi tại đây tại đây (đơn vị USD):</h4>
+            <div class="form-group col-4" style="margin-left: -100px;">
+                <input class="form-control w-25 d-inline-block border-2 fs-5 fw-bold" id="tienTe">
+            </div>
+        </div>
+        <div class="text-center my-3">
+            <button class="btn btn-warning fs-4 fw-bold text-danger d-inline-block" id="btn-doiTien">Đổi tiền</button>
+        </div>
+        <div class="alert alert-danger w-50 mx-auto fs-4 fw-normal text-dark text-center" id="ket-qua-bai-3"></div>
+    </div>
+    <br><br><br>
+    <hr><br><br><br>
+    <div class="container-b4 mx-3">
+        <h3 class="text-success fs-2 mb-4">
+            Bài 4: Nhập vào chiều dài và chiều rộng của hình chữ nhật và xuất ra màn hình chu vi và diện tích của hính
+            chữ nhật đó.
+        </h3>
+        <div class="row form-group mx-auto text-center" style="text-align: center;">
+            <input class="form-control w-25 d-inline-block border-2 col-4 fs-5 mx-3" id="chieuDai"
+                placeholder="Nhập chiều dài tại đây...">
+            <input class="form-control w-25 d-inline-block border-2 col-4 fs-5 mx-3" id="chieuRong"
+                placeholder="Nhập chiều rộng tại đây...">
+            <button class="btn btn-success col-1 fs-3 d-inline-block mx-4"
+                id="btn-tinhDTvaCV">Tính</button>
+        </div>
+        <div class="alert alert-danger mt-4 w-75 mx-auto fs-4 fw-bold text-black" id="ket-qua-bai-4-DT"></div>
+        <div class="alert alert-danger mt-2 w-75 mx-auto fs-4 fw-bold text-black" id="ket-qua-bai-4-CV"></div>
+    </div>
+    <br><br><br>
+    <hr><br><br><br>
+    <div class="container-b5 mx-3">
+        <h3 class="text-success fs-2 mb-4">
+            Bài 5: Nhập vào chương trình số tự nhiên gồm 2 chữ số. Xuất ra màn hình tổng 2 chữ số.
+        </h3>
+        <div class="row">
+            <h4 class="col-5">Nhập một số tự nhiên 2 chữ số bất kì tại đây:</h4>
+            <div class="form-group col-4" style="margin-left: -190px;">
+                <input class="form-control w-25 d-inline-block border-2 fs-5 fw-bold" id="soTN">
+            </div>
+        </div>
+        <div class="text-center my-3">
+            <button class="btn btn-warning fs-4 fw-bold text-danger d-inline-block" id="btn-tinh2KySo">Tính tổng 2 kí số</button>
+        </div>
+        <div class="alert alert-danger w-50 mx-auto fs-4 fw-normal text-dark text-center" id="ket-qua-bai-5"></div>
+    </div>
+    </div>
+    <!-- JS custom -->
+    <script src="/JS/script.js"></script>
+    <!-- JS bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
